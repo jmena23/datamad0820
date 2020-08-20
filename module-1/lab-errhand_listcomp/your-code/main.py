@@ -287,7 +287,8 @@ square_num()
 
 print("\n")
 print("Ejercicio 22:")
-#results = [for num in range(1, 1001) for div in range(2, 10) if num%div == 0]
+#results = [num for num in range(1, 1001) for div in range(2, 10) if num%div == 0]
+#print(results)
 print("SIN ENCONTRAR RESULTADO VALIDO")
 
 

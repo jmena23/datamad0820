@@ -19,9 +19,8 @@ class Soldier:
 
 class Viking(Soldier):
     def __init__(self, name, health, strength):
+        super().__init__(health, strength)
         self.name = name
-        self.health = health
-        self.strength = strength
     
     def receiveDamage(self, damage):
         self.health = self.health - damage
@@ -40,8 +39,7 @@ class Viking(Soldier):
 
 class Saxon(Soldier):
     def __init__(self, health, strength):
-        self.health = health
-        self.strength = strength
+        super().__init__(health, strength)
 
     def receiveDamage(self, damage):
         self.health = self.health - damage

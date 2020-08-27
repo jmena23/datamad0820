@@ -44,7 +44,8 @@ ON titles.pub_id = publishers.pub_id
 GROUP BY authors.au_lname, authors.au_fname
 ORDER BY SUM(titles.ytd_sales) DESC;
 
-SELECT authors.au_id AS "AUTHOR ID", authors.au_lname AS "LAST NAME", authors.au_fname AS "FIRST NAME", ROUND(SUM((titles.ytd_sales * titles.price) + titles.advance * (titleauthor.royaltyper / 100)), 2) AS "PROFIT"
+SELECT authors.au_id AS "AUTHOR ID", authors.au_lname AS "LAST NAME", authors.au_fname AS "FIRST NAME", 
+ROUND(SUM((titles.ytd_sales * titles.price) + titles.advance * (titleauthor.royaltyper / 100)), 2) AS "PROFIT"
 FROM publications.authors
 LEFT JOIN publications.titleauthor
 ON authors.au_id = titleauthor.au_id

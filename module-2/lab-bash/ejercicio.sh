@@ -47,4 +47,10 @@ alias consequatur aut perferendis doloribus asperiores repellat"
 
 16. wc -l lorem/sed.txt
 
-17. 
+17. find lorem -type f | wc -l
+
+18. grep et lorem/at.txt | wc -l
+
+19. grep "et*" lorem/at.txt | wc -l
+
+20. grep "et*" lorem-copy/*.txt | wc -l

@@ -54,3 +54,14 @@ alias consequatur aut perferendis doloribus asperiores repellat"
 19. grep "et*" lorem/at.txt | wc -l
 
 20. grep "et*" lorem-copy/*.txt | wc -l
+
+
+"----------BONUS----------"
+
+1. name=Juan
+
+2. echo $name
+
+3. mkdir $name
+
+4. rmdir $name
